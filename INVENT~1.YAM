@@ -1,0 +1,23 @@
+# Copie este arquivo para inventory.yaml e preencha com seus equipamentos.
+# NUNCA comite inventory.yaml com senha real no Git — use variáveis de
+# ambiente (NETAI_PASSWORD_<NOME_EM_MAIUSCULO>) em vez de senha em texto
+# plano quando possível.
+
+- name: roteador-cisco-01
+  host: 10.0.0.1
+  device_type: cisco_ios       # veja as opções em vendors.py
+  username: admin
+  password: ""                  # deixe vazio pra usar NETAI_PASSWORD_ROTEADOR-CISCO-01
+  secret: ""                    # enable password, se houver
+
+- name: switch-huawei-01
+  host: 10.0.0.2
+  device_type: huawei_vrp
+  username: admin
+  password: ""
+
+- name: roteador-mikrotik-01
+  host: 10.0.0.3
+  device_type: mikrotik_routeros
+  username: admin
+  password: ""
